@@ -35,6 +35,7 @@ public class EmailService implements EmailSender{
             helper.setFrom("as43business@gmail.com");
             mailSender.send(mimeMessage);
 		System.out.println("Yes");
+		System.out.println("No");
         } catch (MessagingException e) {
             LOGGER.error("failed to send email", e);
             throw new IllegalStateException("failed to send email");
